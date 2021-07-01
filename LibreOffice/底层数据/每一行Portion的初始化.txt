@@ -1,0 +1,8 @@
+BuildPortions 每一个文本部分的添加:  SwTextFormatter::BuildPortions 736 -->  SwTextFormatter::NewPortion   1468  --> SwTextFormatter::NewTextPortion 1006
+                                                             -->  SwTextFormatter::WhichTextPor  988
+
+BuildPartion 路径 SwTextFrame::Format_  -> SwTextFrame::FormatLine  -> SwTextFormatter::FormatLine  -> SwTextFormatter::BuildPortions
+
+
+
+网格宽度获取: SwTextFormatter::BuildPortions  行397

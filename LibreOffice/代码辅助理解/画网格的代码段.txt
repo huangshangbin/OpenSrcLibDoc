@@ -1,0 +1,9 @@
+行2936: SwRootFrame::PaintSwFrame  函数在 3150行  和  3175行 调用
+
+画网格函数为:  void SwLineRects::PaintLines( OutputDevice *pOut, SwPaintProperties const &properties )
+
+
+
+
+画网格数据的计算函数:
+     SwRootFrame::PaintSwFrame （3143）-->  SwFrame::PaintBaBo(6066) --> SwPageFrame::PaintGrid (5495) --> SwFrame::PaintBorderLine

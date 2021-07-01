@@ -1,0 +1,2 @@
+SwTextPainter：
+   SwTextCursor --> SwTextAdjuster --> SwTextMargin --> SwTextIter --> SwAttrlter --> m_pTextNode

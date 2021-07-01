@@ -1,0 +1,7 @@
+1   人口函数  Desktop::Main()
+
+   2   窗口消息循环   Application::Execute()
+
+   3   消息派发  ImplSalDispatchMessage
+   
+   4  消息窗口处理   SalFrameWndProcW SalFrameWndProc  ImplWindowFrameProc  ImplHandleUserEvent  SfxDispatcher::Call_Impl    SwDocShell::Edit

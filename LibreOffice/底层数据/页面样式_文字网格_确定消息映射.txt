@@ -1,0 +1,10 @@
+页面样式:
+    对话框类 : SwTemplateDlgController
+    ui文件: D:\office\source\core_v7.0\instdir\share\config\soffice.cfg\modules\swriter\ui\templatedialog8.ui
+
+文字网格:
+    对话框类: SwTextGridPage  
+    ui文件: sw\source\ui\misc\pggrid.cxx
+
+
+消息映射函数:   SwTemplateDlgController::Ok()

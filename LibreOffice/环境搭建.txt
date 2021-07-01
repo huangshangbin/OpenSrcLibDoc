@@ -1,0 +1,4 @@
+编译某一个模块:
+    1   cd /cygdrive/d/office/source/core_v7.0
+    2  /opt/lo/bin/make 模块名.clean     //       例子: /opt/lo/bin/make qui.clean
+    3  /opt/lo/bin/make build-nocheck gb_COLOR=1

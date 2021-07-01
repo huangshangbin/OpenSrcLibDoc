@@ -1,0 +1,9 @@
+1   SwFrameAreaDefinition::FrameAreaWriteAccess::~FrameAreaWriteAccess()  debug 流程
+       （1）  inline void SwFrame::OptCalc() const（1058）    -->SwFrame::OptPrepareMake -->  SwContentFrame::MakeAll -->  SwTextFrame::MakePos() -->
+                SwFrame::MakePos() 
+         (2)   SwTextFrame::FormatAdjust --> SwTextFrame::AdjustFrame  --> SwFrame::Grow --> SwContentFrame::GrowFrame
+
+    4  debug 流程汇总:
+            inline void SwFrame::OptCalc() const（1058）   -->  SwTextFrame::Format( 1748)  -->  SwTextFrame::PaintSwFrame
+
+  5  结论 计算接口为:    SwFrame::MakePos()
