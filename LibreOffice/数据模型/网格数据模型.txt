@@ -1,0 +1,16 @@
+类:  SwTextGridItem
+
+成员 :   m_nBaseHeight   网格高度，第一次设置是加载 document.xml。 w:docGrid  w:linePitch  字段
+     
+
+
+
+
+
+
+
+
+
+
+说明:
+     网格数据跟页关联， SwTextGridItem const*const pGrid(GetGridItem(static_cast<SwPageFrame*>(GetUpper())));

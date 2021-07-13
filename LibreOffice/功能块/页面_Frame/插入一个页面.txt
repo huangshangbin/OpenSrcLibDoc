@@ -1,0 +1,26 @@
+当一个段落在当前页无法显示添加新页面的流程:
+ 
+
+引起添加页面的原因计算:
+SwTextFrame::Format_  （1549） -->  SwTextFrame::FormatLine( rLine, bPrev ); 
+
+起始位置: rLine --> ... --> SwTextIter --> m_nStart 
+当前行长度: rLine --> ... --> SwTextIter --> m_pCurr --> SwTextPortion --> SwLinePortion --> nLineLength
+
+如果 起始位置 + 长度 ！= END(段落长度) ,则需要添加新页。
+
+
+深层原因:
+ SwTextFrameBreak::IsInside 是否在剩下PrintArea区域内，是就不换行。不是就换行。
+     重要判断代码  nTmpY = rLine.Y() + rLine.GetLineHeight();   通过上一行Y坐标，加上行高来比较的。
+
+
+    ...   -->             SwFrame::GetNextLeaf (1018)-->  --> SwFrame::InsertPage
+
+
+
+SwFlowFrame::SetFollow 设置下一页面    
+
+SwTextFrame::FormatAdjust
+
+SwTextFrame::SplitFrame  分割段落帧

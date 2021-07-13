@@ -7,3 +7,5 @@
             inline void SwFrame::OptCalc() const（1058）   -->  SwTextFrame::Format( 1748)  -->  SwTextFrame::PaintSwFrame
 
   5  结论 计算接口为:    SwFrame::MakePos()
+
+

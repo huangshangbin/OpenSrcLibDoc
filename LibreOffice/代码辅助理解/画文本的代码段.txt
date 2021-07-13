@@ -1,1 +1,0 @@
-SwTextFrame::PaintSwFrame (698)  --> SwTextPainter::DrawTextLine (388)  --> SwTextPortion::Paint (573) -->  SwTextPaintInfo::DrawText_

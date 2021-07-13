@@ -1,0 +1,3 @@
+最外层: SwPageFrame   w:11906    h: 16838
+
+绘制层: SwBodyFrame w: 8300 h: 13958     leftPoint (1803, 1440)              rightBottom (10103, 15398)

@@ -1,0 +1,32 @@
+1   SwFrameAreaDefinition::FrameAreaWriteAccess::~FrameAreaWriteAccess()  debug 流程
+       （1） void SwFrame::Calc(vcl::RenderContext* pRenderContext) const（1817）    -->void SwFrame::PrepareMake(vcl::RenderContext* pRenderContext) (374) -->  
+                   void SwLayoutFrame::MakeAll(vcl::RenderContext* /*pRenderContext*/) (1028) -->  void SwBodyFrame::Format( vcl::RenderContext* /*pRenderContext*/, const SwBorderAttrs * )
+
+ 说明: 之前会调用SwFrame::MakePos()  获取到area的Y坐标。然后才计算出PrintArea
+
+  5  结论 计算接口为:    SwBodyFrame::Format
+
+
+
+Frame 类型
+
+enum class SwFrameType
+{
+    None        = 0x0000,
+    Root        = 0x0001,
+    Page        = 0x0002,
+    Column      = 0x0004,
+    Header      = 0x0008,
+    Footer      = 0x0010,
+    FtnCont     = 0x0020,
+    Ftn         = 0x0040,
+    Body        = 0x0080,
+    Fly         = 0x0100,
+    Section     = 0x0200,
+//  UNUSED      0x0400
+    Tab         = 0x0800,
+    Row         = 0x1000,
+    Cell        = 0x2000,
+    Txt         = 0x4000,
+    NoTxt       = 0x8000,
+};

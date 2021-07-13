@@ -1,0 +1,4 @@
+void SwBodyFrame::Format( vcl::RenderContext* /*pRenderContext*/, const SwBorderAttrs * )
+
+网格高度: long nSum = pGrid->GetBaseHeight() + pGrid->GetRubyHeight();
+网格偏移: long nBorder = 0;

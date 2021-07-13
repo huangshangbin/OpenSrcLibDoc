@@ -1,0 +1,1 @@
+SwTextFrame::getCurParaRect (1880) -->  SwTextFrame::getHorRec

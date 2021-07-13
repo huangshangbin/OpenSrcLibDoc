@@ -1,0 +1,17 @@
+SwTextFormatter
+
+类说明: 一段文本的格式化类。
+
+
+
+当前段内容: SwTextPainter --> SwTextCursor --> SwTextAdjuster --> SwTextMargin --> SwTextIter --> SwTextAttrlter --> m_pTextNode
+
+当前行内容相对于段落的起始位置: m_nLeftScanIdex
+
+
+
+
+
+SwTextIter
+ 类说明: 一段文本
+   当前行的ascent值: m_pCurr --> SwTextPortion --> SwLinePortion --> nAscent

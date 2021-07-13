@@ -1,0 +1,4 @@
+SwTextFrame::PaintSwFrame (698)  --> SwTextPainter::DrawTextLine (388)  --> SwTextPortion::Paint (573) -->  SwTextPaintInfo::DrawText_
+
+
+SwTextPainter::DrawTextLine 里面调用 SwTextCursor::AdjustBaseLine ，垂直方向文本的ascent调整在这里处理。
