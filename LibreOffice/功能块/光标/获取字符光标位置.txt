@@ -1,0 +1,5 @@
+SwTextCursor::GetCharRect_
+
+
+
+SwTextFrame::GetCharRect

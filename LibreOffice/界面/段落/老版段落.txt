@@ -1,0 +1,3 @@
+界面数据写入内存:  SvxStdParagraphTabPage::FillItemSet
+
+内存数据更新界面:  SvxStdParagraphTabPage::Reset

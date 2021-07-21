@@ -9,7 +9,6 @@ SwTextFormatter::CalcRealHeight
 行高Ascent 其他地方的修改:  void SwTextIter::CalcAscentAndHeight( sal_uInt16 &rAscent, sal_uInt16 &rHeight ) const
 
 
-附加说明:
-      1 获取字体 ascent: SwFntObj::GetFontAscent
 
-      2 设置字体 leading: SwFntObj::AdjustExtLeading
+
+

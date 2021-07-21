@@ -1,0 +1,5 @@
+DomainMapper::sprmWithProps
+
+
+
+DomainMapper::lcl_attribute

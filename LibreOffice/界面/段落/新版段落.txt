@@ -1,0 +1,4 @@
+内存数据更新界面: QCoreParaKernel::setOrigParaDist
+
+
+界面数据写入内存:   QCoreParaKernel::FillParaDistItemSet

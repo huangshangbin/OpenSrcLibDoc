@@ -1,0 +1,5 @@
+SwTextFrame::Prepare   InvalidatePrt(）
+
+
+
+SwTextFrame::CalcLineSpace  里面调用 Init();

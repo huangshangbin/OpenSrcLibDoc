@@ -1,0 +1,1 @@
+SwFntObj::GetFontAscent

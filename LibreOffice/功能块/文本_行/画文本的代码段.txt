@@ -1,0 +1,11 @@
+SwTextFrame::PaintSwFrame (698)  --> SwTextPainter::DrawTextLine (388)  --> SwTextPortion::Paint (573) -->  SwTextPaintInfo::DrawText_
+
+
+SwTextPainter::DrawTextLine 里面调用 SwTextCursor::AdjustBaseLine ，这里是根据段落，文本对齐方式来调用的。
+
+
+
+SwTextPortion::Paint里面:
+文本的矩形框为成员(绝对值) : aPaintRect 
+文本的位置为 (绝对值): aPos 
+

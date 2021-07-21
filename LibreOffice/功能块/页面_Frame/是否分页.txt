@@ -1,0 +1,5 @@
+页面帧的判断: SwContentFrame::MakeAll       根据 nBottomDist判断
+
+
+
+文本帧的判断: SwTextFrameBreak::IsInside
