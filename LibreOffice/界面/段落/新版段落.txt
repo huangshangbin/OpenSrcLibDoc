@@ -1,4 +1,14 @@
+窗口初始化：  QDParagraphDialog::initDialog
+
+
+段间距设置:
 内存数据更新界面: QCoreParaKernel::setOrigParaDist
 
 
 界面数据写入内存:   QCoreParaKernel::FillParaDistItemSet
+
+
+
+
+行距设置:
+内存数据更新界面: QCoreParaKernel::FillLineDistItemSet

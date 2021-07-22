@@ -1,3 +1,10 @@
+段间距:
 界面数据写入内存:  SvxStdParagraphTabPage::FillItemSet
 
 内存数据更新界面:  SvxStdParagraphTabPage::Reset
+
+
+
+
+行距:
+界面数据写入内存:  SvxStdParagraphTabPage::FillItemSet     -->     SetLineSpace_Impl

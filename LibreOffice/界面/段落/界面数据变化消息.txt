@@ -1,0 +1,4 @@
+QCIndentSpacingTabWidget::on_lineDistComboBox_currentIndexChanged
+
+
+QCIndentSpacingTabWidget::on_lineDistSpinBox_valueChanged
