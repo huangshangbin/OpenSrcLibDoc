@@ -1,0 +1,3 @@
+打开页面样式时  : IMPL_LINK(SwTextGridPage, GridTypeHdl
+
+修改属性时更新内存数据：AdjustPageDescTextGrid， 视图里面的网格线显示与否与这里用的时同一块内存，所以也会调用

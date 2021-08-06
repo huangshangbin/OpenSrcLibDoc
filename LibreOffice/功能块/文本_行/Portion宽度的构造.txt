@@ -1,0 +1,6 @@
+SwTextPortion::Format_ (305) -->SwTextGuess::Guess(166) --> SwTextSizeInfo::GetTextSize(438) --> Size GetTextSize_( SwDrawTextInfo& rInf )(311)
+                          --> SwSubFont::GetTextSize_(1062) -->SwFntObj::GetTextSize(2176, 2182)
+
+1 宽度拿的是 nBreakWidth 这个属性。 在 SwTextGuess::Guess 里面计算的。
+
+2 最终的计算是在 SwFntObj::GetTextSize 这个接口，根据 bCompress 会影响宽度大小，目前测试特殊符号，《。等会有区别

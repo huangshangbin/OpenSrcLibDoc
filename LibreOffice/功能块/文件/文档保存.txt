@@ -1,0 +1,9 @@
+修改文档后，ctrl+s：
+
+SfxObjectShell::ExecFile_Impl               ModelData_Impl::CheckStateForSave
+
+
+未保存过文件打开保存文件对话框:
+
+ModelData_Impl::OutputFileDialog          853   std::unique_ptr<sfx2::FileDialogHelper> pFileDlg;     实现类: FileDialogHelper_Impl
+

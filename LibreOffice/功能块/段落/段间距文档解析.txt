@@ -1,0 +1,21 @@
+段间距数据读取到内存：
+DocxTableStyleExport::Impl::tableStylePSpacing（340）
+
+DomainMapper::lcl_attribute  （431） （708）
+
+DomainMapper_Impl::finishParagraph （文件加载的时候） （1534）--> GetIsFirstParagraphInSection 判断是不是第一个段落，与word逻辑相同。
+
+
+
+
+
+
+xml协议：
+      word\document.xml   里面的  1 类型为 行（段前 1行，段后 2行）： <w:spacing w:beforeLines="100" w:before="240" w:afterLines="200" w:after="480"/>
+
+                                        2  类型为 自动（段前 自动，段后 自动）：<w:spacing w:before="100" w:beforeAutospacing="1" w:after="100" w:afterAutospacing="1"/>
+
+                                        3 类型为 磅（段前 10磅，段后 20磅）<w:spacing w:before="200" w:after="400"/>
+
+
+

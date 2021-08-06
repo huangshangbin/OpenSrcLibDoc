@@ -1,0 +1,14 @@
+以窗口焦点消息为例：
+
+消息函数声明：DECL_DLLPRIVATE_LINK( ImplAsyncFocusHdl, void*, void );
+消息函数定义：IMPL_LINK_NOARG(vcl::Window, ImplAsyncFocusHdl, void*, void)
+
+
+消息函数绑定：Application::PostUserEvent( LINK( pWindow, vcl::Window, ImplAsyncFocusHdl ), nullptr, true);
+
+
+说明:
+    1 消息函数绑定的作用是 把类消息函数地址传给其它线程调用。 并传入参数。
+
+    2 消息函数的本质是一个静态函数。 这样设计复杂度过大。并且用宏隐藏细节。不好调试。 当时可能c++标准版本过旧。  使用了模板来泛型化参数，返回值。作为成员变量被
+      其它线程使用

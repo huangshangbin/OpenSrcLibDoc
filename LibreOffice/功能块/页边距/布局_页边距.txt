@@ -1,0 +1,11 @@
+
+
+QWordToolBarController::SetCallbackPageMargin
+
+
+
+
+
+设置页边距:
+       1 数据写入内存   QWordToolBarController::CustomMarginHdl
+       2 页面刷新          SwView::ExecTabWin   

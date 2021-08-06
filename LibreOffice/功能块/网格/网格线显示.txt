@@ -1,0 +1,1 @@
+D:\office\source\core_v7.0\officecfg\registry\schema\org\openoffice\Office\Writer.xcs

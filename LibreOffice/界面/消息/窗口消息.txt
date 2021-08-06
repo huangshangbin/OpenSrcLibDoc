@@ -1,0 +1,6 @@
+所有窗口消息处理函数:  SalFrameWndProc
+
+SalFrame窗口消息处理函数：ImplWindowFrameProc
+
+
+发送自定义用户事件窗口消息：Application::PostUserEvent

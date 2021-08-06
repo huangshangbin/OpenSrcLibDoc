@@ -1,0 +1,14 @@
+行距数据写入内存：
+     DomainMapper::lcl_attribute （463）
+
+
+
+行距数据保存到文件：
+   DocxAttributeOutput::ParaLineSpacing_Impl
+
+
+    
+
+
+xml协议：
+       word\document.xml          <w:spacing w:lineRule="auto" w:line="960"/>

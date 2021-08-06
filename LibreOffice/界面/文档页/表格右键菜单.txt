@@ -1,0 +1,6 @@
+菜单配置文件：D:\office\source\core_v7.0\sw\uiconfig\swriter\popupmenu\table.xml
+
+
+文件的加载：SwTableAutoFormat::Load   好像并没调用该接口了
+
+

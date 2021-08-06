@@ -1,0 +1,5 @@
+文件: D:\office\source\core_v7.0\officecfg\registry\schema\org\openoffice\Office\Common.xcs
+
+
+
+最近访问文件最大数设置:  2197行   对应代码  SvtHistoryOptions_Impl::GetCapacity  138行

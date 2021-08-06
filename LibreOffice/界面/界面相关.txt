@@ -1,1 +1,6 @@
 1   弹出的对话框都会继承  SfxTabPage  类， 在构造函数打断点，通过堆栈即可定位到对应的界面类。
+
+
+
+2   窗口获取绑定的Frame ：WinSalFrame* GetWindowPtr
+     窗口绑定Frame ：void SetWindowPtr

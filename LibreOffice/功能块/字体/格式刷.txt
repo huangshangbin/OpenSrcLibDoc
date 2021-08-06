@@ -1,0 +1,13 @@
+开始  -->  剪切板格式刷
+
+
+SwEditWin::MouseButtonUp  OFFICEWIN-1022
+
+
+
+
+格式刷的复制粘贴：SwFormatClipboard::Copy               SwFormatClipboard::Paste
+
+
+
+

@@ -16,7 +16,7 @@
   
     SvxStdParagraphTabPage::FillItemSet (305)  (libre)
 
-Frame拿段前段后设置PrintArea:
+段落Frame拿段前段后设置PrintArea:
      SwFlowFrame::CalcUpperSpace (1455) 
 
 
@@ -27,6 +27,8 @@ Frame拿段前段后设置PrintArea:
     1  界面数据类都继承 SfxPoolItem， 保存在 SfxItemSet 类中。
 
     2  段前段后数据类 SvxULSpaceItem
+
+    3  para_indent_spacing.ui （1279） 配置段前段后属性 
 
 
 

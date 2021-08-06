@@ -1,0 +1,1 @@
+新建文档的窗口Frame：WinSalFrame
