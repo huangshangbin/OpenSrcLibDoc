@@ -1,0 +1,25 @@
+1 include/editeng/memberids.h  Item数据 添加信号类型  :  #define MID_UP_MARGIN_RULE 8
+
+2 SvxULSpaceItem Item类型  重写 PutValue 添加 信号 接收  : case MID_UP_MARGIN_RULE: eUpperSpaceRule = (SvxULSpaceRule) nVal;
+
+3 svx/source/form/formcontrolfactory.cxx   aCharacterAndParagraphProperties  添加属性  :  "ParaTopMarginRule",
+
+4 include/editeng/unoprnms.hxx 添加 UNO 绑定   :  #define UNO_NAME_PARA_TOP_MARGIN_RULE "ParaTopMarginRule"
+
+5 sw/source/core/unocore/unomapproperties.hxx	 UNO 绑定 Item 和 Item 信号    :   OUString(UNO_NAME_PARA_TOP_MARGIN_RULE),   RES_UL_SPACE    MID_UP_MARGIN_RULE },
+
+6 writerfilter/source/dmapper/DomainMapper.cxx 文件数据写入 DomainMapper ：m_pImpl->GetTopContext()->Insert(PROP_PARA_TOP_MARGIN_RULE);
+
+7  writerfilter/source/dmapper/PropertyIds.cxx DomainMapper 类型 绑定 UNO 类型 ：case PROP_PARA_TOP_MARGIN_RULE:       sName = "ParaTopMarginRule"; break;
+
+8  writerfilter/source/dmapper/PropertyIds.hxx     定义  DomainMapper  类型  ： PROP_PARA_BOTTOM_MARGIN_RULE
+
+
+
+说明：
+    1  DomainMapper::lcl_attribute  加载文档
+
+    2 文档加载完成会有一个事件 调用 DomainMapper_Impl::finishParagraph  去设置 DomainMapper 类型绑定的 Item 的值。
+
+    3 数据池 SfxItemPool  pPool->GetWhich(SID_ATTR_ULSPACE); 获取到的类型就是 UNO 绑定的类型 RES_UL_SPACE    
+   

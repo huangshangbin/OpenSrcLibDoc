@@ -1,0 +1,9 @@
+段间距数据保存到文件:
+DocxAttributeOutput::FormatULSpace（8608） 
+
+
+DocxTableStyleExport::Impl::tableStylePSpacing （330）   
+
+
+
+<attribute name="beforeLines" tokenid="ooxml:CT_Spacing_beforeLines"/>

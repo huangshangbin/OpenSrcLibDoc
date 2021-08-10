@@ -1,0 +1,37 @@
+段落对话框类:  QDParagraphDialog
+
+                       SvxStdParagraphTabPage  (libre)
+
+
+
+从内存读取数据到界面:
+  QCoreParaKernel::setOrigParaDist (401)
+
+  SvxStdParagraphTabPage::Reset (604)  (libre)
+
+
+
+界面数据写入内存:  
+   QCoreParaKernel::FillParaDistItemSet (1055)
+  
+    SvxStdParagraphTabPage::FillItemSet (305)  (libre)
+
+段落Frame拿段前段后设置PrintArea:
+     SwFlowFrame::CalcUpperSpace (1455) 
+
+
+
+
+
+说明:
+    1  界面数据类都继承 SfxPoolItem， 保存在 SfxItemSet 类中。
+
+    2  段前段后数据类 SvxULSpaceItem
+
+    3  para_indent_spacing.ui （1279） 配置段前段后属性 
+
+
+
+附加逻辑:
+    1  界面绘制, 使用网格，用网格宽度作为基础倍数:  SwFlowFrame::CalcUpperSpace (1608)    如果不使用网格 nDist 就已经是段距了，不需要重新计算设置。
+               SwFlowFrame::CalcUpperSpace (1455) ，此时计算的距离包括段前段后。 

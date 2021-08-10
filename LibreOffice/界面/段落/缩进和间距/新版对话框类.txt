@@ -1,0 +1,5 @@
+IndentSpacingTabWidget
+
+
+ui定义文件：D:\office\source\core_v7.0\qcorepopdialogs\uiconfig\ui\word\start\para_indent_spacing.ui
+编译 ui 后的头文件：D:\office\source\core_v7.0\workdir\CustomTarget\qcorepopdialogs\uiconfig\ui\word\start\para_indent_spacing_ui

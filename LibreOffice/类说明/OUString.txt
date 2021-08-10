@@ -1,0 +1,6 @@
+中文转 OUString ： OUString::fromUtf8("行")
+
+查找字符串：OUString topDistText = m_xTopDist->get_text();  topDistText.indexOf("huang")；  
+           1  查找中文需要使用 OUString 类型。
+
+
